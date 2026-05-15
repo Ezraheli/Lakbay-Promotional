@@ -61,7 +61,7 @@
   }
 
   .hero-gradient-overlay {
-    @apply pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-black/55 to-black;
+    @apply pointer-events-none absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/70;
   }
 
   .hero-glow {
@@ -116,11 +116,11 @@
   }
 
   .apple-btn-primary {
-    @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-teal-600 px-9 text-[15px] font-semibold text-white transition-colors hover:bg-teal-700;
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-[#d66f29] px-9 text-[15px] font-semibold text-white transition-colors hover:bg-[#b85e22];
   }
 
   .apple-btn-ghost {
-    @apply inline-flex items-center justify-center text-[15px] font-medium text-teal-200/90 transition-colors hover:text-white;
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-full border-2 border-white px-9 text-[15px] font-medium text-white transition-colors hover:bg-white hover:text-[#2f7a7f];
   }
 
   .hero-scroll {
@@ -128,11 +128,11 @@
   }
 
   .hero-scroll-line {
-    @apply h-10 w-px bg-gradient-to-b from-white/35 to-transparent;
+   @apply h-10 w-px bg-gradient-to-b from-white to-transparent;
   }
 
   .hero-scroll-label {
-    @apply animate-bounce text-[10px] font-medium uppercase tracking-[0.25em] text-white/40;
+   @apply animate-bounce text-[10px] font-medium uppercase tracking-[0.25em] text-white;
   }
 
   /* —— Highlights (“Get the highlights.”) —— */
