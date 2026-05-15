@@ -57,8 +57,7 @@
   }
 
   .hero-bg {
-    background-image: url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2400&q=80");
-    @apply bg-cover bg-center opacity-90;
+    background-image: url("media/bg1.svg");    @apply bg-cover bg-center opacity-90;
   }
 
   .hero-gradient-overlay {
