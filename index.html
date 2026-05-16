@@ -106,15 +106,20 @@
 
 
 <!-- Highlights: Bento Showcase -->
-<section id="highlights" class="section-bleed bg-[url('media/bg2.svg')] bg-cover bg-center border-t-0 -mt-1 min-h-screen flex flex-col justify-center">
-  <div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-    
-    <!-- Header -->
-    <div class="mb-10 lg:mb-12 text-center">
-      <p class="section-kicker reveal text-white" data-reveal>Why Lakbay</p>
-      <h2 class="highlights-title reveal text-white text-center text-[clamp(1.5rem,3.5vw,2.25rem)]" data-reveal>Everything you need<br>to plan the dream.</h2>
-    </div>
-    
+    <section id="highlights" class="relative section-bleed border-t-0 -mt-1 min-h-screen flex flex-col justify-center">
+      <!-- Mobile BG -->
+      <div class="absolute inset-0 bg-[url('media/mobile-bg2.svg')] bg-cover bg-center block sm:hidden"></div>
+      <!-- Desktop BG -->
+      <div class="absolute inset-0 bg-[url('media/bg2.svg')] bg-cover bg-center hidden sm:block"></div>
+
+      <div class="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="mb-10 lg:mb-12 text-center">
+          <p class="section-kicker reveal text-white" data-reveal>Why Lakbay</p>
+          <h2 class="highlights-title reveal text-white text-center text-[clamp(1.5rem,3.5vw,2.25rem)]" data-reveal>Everything you need<br>to plan the dream.</h2>
+        </div>
+
     <!-- Bento Grid -->
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-6 lg:grid-cols-12">
 
