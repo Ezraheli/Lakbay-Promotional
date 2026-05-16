@@ -57,19 +57,22 @@
   </div>
 
 
-  <!-- Hero: Refined Product Showcase -->
+<!-- Hero: Refined Product Showcase -->
   <section id="hero"
     class="relative flex min-h-[92vh] w-full items-center justify-center overflow-hidden bg-neutral-900 px-6 py-20 lg:min-h-[732px]">
     <!-- Background Elements -->
     <div class="absolute inset-0 z-0">
-      <div
-          class="absolute inset-0 bg-[url('media/bg1.svg')] bg-cover bg-center opacity-100">      
-        </div>
+
+      <!-- Mobile BG -->
+      <div class="absolute inset-0 bg-[url('media/mobile-bg1.svg')] bg-cover bg-center opacity-100 block sm:hidden"></div>
+      <!-- Desktop BG -->
+      <div class="absolute inset-0 bg-[url('media/bg1.svg')] bg-cover bg-center opacity-100 hidden sm:block"></div>
+
       <div class="hero-gradient-overlay"></div>
       <div class="absolute -top-[10%] left-[10%] h-[400px] w-[400px] rounded-full bg-teal-500/10 blur-[100px]"></div>
-      <div class="absolute -bottom-[10%] right-[10%] h-[400px] w-[400px] rounded-full bg-orange-500/10 blur-[100px]">
-      </div>
+      <div class="absolute -bottom-[10%] right-[10%] h-[400px] w-[400px] rounded-full bg-orange-500/10 blur-[100px]"></div>
     </div>
+
 
     <div class="relative z-10 w-full max-w-[840px] text-center">
       <div class="flex flex-col items-center">
