@@ -21,20 +21,20 @@
   <header id="site-nav" class="fixed left-0 right-0 top-0 z-50 transition-all duration-300">
     <div class="mx-auto flex h-[60px] max-w-[1200px] items-center justify-between px-5 lg:px-8">
       
-      <a href="#">
-        <img src="media/lakbay_logo1.svg" alt="Lakbay+" class="h-28 w-auto">
-      </a>      
-      <nav class="nav-links absolute left-1/2 hidden -translate-x-1/2 items-center gap-9 text-[13px] font-medium tracking-tight transition-colors duration-300 lg:flex">
-              <a href="#highlights">Highlights</a>
-              <a href="#manifesto">Philosophy</a>
-              <a href="#ai-engine">Itinerary</a>
-              <a href="#canvas">Collab</a>
-              <a href="#reverse-budget">Budgeting</a>
-              <a href="#memory">Memory</a>
-            </nav>      
-      <div class="flex items-center gap-4">
-        
-        <a href="#finale" class="rounded-full bg-teal-500 px-5 py-2 text-[13px] font-bold text-white shadow-sm transition-all hover:scale-105 hover:bg-teal-600">Start</a>
+    <a href="#">
+      <img src="media/lakbay_logo1.svg" alt="Lakbay+" class="h-24 w-auto">
+    </a>      
+    <nav class="nav-links absolute left-1/2 hidden -translate-x-1/2 items-center gap-9 text-[13px] font-medium tracking-tight transition-colors duration-300 lg:flex">
+      <a href="#highlights" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Highlights</a>
+      <a href="#manifesto" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Philosophy</a>
+      <a href="#ai-engine" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Itinerary</a>
+      <a href="#canvas" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Collab</a>
+      <a href="#reverse-budget" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Budgeting</a>
+      <a href="#memory" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Memory</a>
+    </nav>      
+    <div class="flex items-center gap-4">           
+
+        <a href="#finale" class="rounded-full bg-teal-500 px-5 py-2 text-[13px] font-bold text-[white] shadow-sm transition-all hover:scale-105 hover:bg-teal-600">Start</a>
         
         <button id="mobile-menu-btn" class="relative flex w-6 flex-col justify-center gap-[5px] py-2 lg:hidden" aria-label="Toggle menu">
           <span class="block h-[2px] w-full rounded-full transition-all duration-300"></span>
@@ -47,12 +47,12 @@
 
   <div id="mobile-menu" class="fixed inset-0 z-40 flex h-[100dvh] w-full flex-col items-center justify-center bg-neutral-950/95 px-6 backdrop-blur-2xl transition-all duration-500 opacity-0 pointer-events-none lg:hidden">
     <nav class="flex flex-col items-center gap-8 text-[1.25rem] font-medium tracking-tight text-white/90">
-      <a href="#highlights" class="mobile-link transition-colors hover:text-teal-400">Highlights</a>
-      <a href="#manifesto" class="mobile-link transition-colors hover:text-teal-400">Philosophy</a>
-      <a href="#ai-engine" class="mobile-link transition-colors hover:text-teal-400">Itinerary</a>
-      <a href="#canvas" class="mobile-link transition-colors hover:text-teal-400">Collab</a>
-      <a href="#reverse-budget" class="mobile-link transition-colors hover:text-teal-400">Budgeting</a>
-      <a href="#memory" class="mobile-link transition-colors hover:text-teal-400">Memory</a>
+      <a href="#highlights" class="mobile-link transition-colors hover:text-[#2f7a7f]">Highlights</a>
+      <a href="#manifesto" class="mobile-link transition-colors hover:text-[#2f7a7f]">Philosophy</a>
+      <a href="#ai-engine" class="mobile-link transition-colors hover:text-[#2f7a7f]">Itinerary</a>
+      <a href="#canvas" class="mobile-link transition-colors hover:text-text-[#2f7a7f]">Collab</a>
+      <a href="#reverse-budget" class="mobile-link transition-colors hover:text-[#2f7a7f]">Budgeting</a>
+      <a href="#memory" class="mobile-link transition-colors hover:text-[#2f7a7f]">Memory</a>
     </nav>
   </div>
 
@@ -63,7 +63,8 @@
     <!-- Background Elements -->
     <div class="absolute inset-0 z-0">
       <div
-          class="absolute inset-0 bg-[url('media/bg1.svg')] bg-cover bg-center opacity-60">      </div>
+          class="absolute inset-0 bg-[url('media/bg1.svg')] bg-cover bg-center opacity-100">      
+        </div>
       <div class="hero-gradient-overlay"></div>
       <div class="absolute -top-[10%] left-[10%] h-[400px] w-[400px] rounded-full bg-teal-500/10 blur-[100px]"></div>
       <div class="absolute -bottom-[10%] right-[10%] h-[400px] w-[400px] rounded-full bg-orange-500/10 blur-[100px]">
@@ -102,10 +103,10 @@
 
 
   <!-- Highlights: Bento Showcase -->
-  <section id="highlights" class="section-bleed bg-white pt-16 lg:pt-20">
-    <div class="highlights-head mb-10 lg:mb-12">
-      <p class="section-kicker reveal text-center" data-reveal>Why Lakbay</p>
-      <h2 class="highlights-title reveal text-center text-[clamp(1.5rem,3.5vw,2.25rem)]" data-reveal>Everything you
+    <section id="highlights" class="section-bleed bg-[url('media/bg2.svg')] bg-cover bg-center border-t-0 -mt-1 min-h-screen flex flex-col justify-center">
+  <div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+      <p class="section-kicker reveal text-center text-white" data-reveal>Why Lakbay</p>
+      <h2 class="highlights-title reveal text-white text-center text-[clamp(1.5rem,3.5vw,2.25rem)]" data-reveal>Everything you
         need<br>to plan the dream.</h2>
     </div>
 
