@@ -31,6 +31,7 @@
       <a href="#canvas" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Collab</a>
       <a href="#reverse-budget" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Budgeting</a>
       <a href="#memory" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Memory</a>
+      <a href="#pricing" style="color:#2f7a7f" onmouseover="this.style.color='#d66f29'" onmouseout="this.style.color='#2f7a7f'">Pricing</a>
     </nav>      
     <div class="flex items-center gap-4">           
 
@@ -53,6 +54,7 @@
       <a href="#canvas" class="mobile-link transition-colors hover:text-text-[#2f7a7f]">Collab</a>
       <a href="#reverse-budget" class="mobile-link transition-colors hover:text-[#2f7a7f]">Budgeting</a>
       <a href="#memory" class="mobile-link transition-colors hover:text-[#2f7a7f]">Memory</a>
+      <a href="#pricing" class="mobile-link transition-colors hover:text-[#2f7a7f]">Pricing</a>
     </nav>
   </div>
 
@@ -106,8 +108,8 @@
 
 
 <!-- Highlights: Bento Showcase -->
-    <section id="highlights" class="relative border-t-0 -mt-1 min-h-screen flex flex-col justify-center py-24 lg:py-32 px-4 sm:px-6 lg:px-8">     
-      <div class="mx-auto w-full max-w-6xl">
+    <section id="highlights" class="relative border-t-0 -mt-1 -mb-1 min-h-screen flex flex-col justify-center py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto w-full max-w-6xl">
 
       <!-- Mobile BG -->
       <div class="absolute inset-0 bg-[url('media/mobile-bg2.svg')] bg-cover bg-center block sm:hidden"></div>
@@ -245,8 +247,7 @@
 
 
   <!-- Philosophy: The Lakbay Manifesto -->
-  <section id="manifesto" class="section-bleed relative overflow-hidden bg-white py-20 lg:py-28">
-    <div
+  <section id="manifesto" class="relative overflow-hidden bg-white py-20 lg:py-28 px-4 sm:px-6 lg:px-8"> <div
       class="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-50/30 blur-[120px]"
       aria-hidden="true"></div>
 
@@ -489,8 +490,8 @@
 
 
 <!-- Group Collaboration -->
-<section id="canvas" class="relative overflow-hidden bg-neutral-50/50 py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-  <div class="mx-auto w-full max-w-6xl">
+  <section id="canvas" class="relative overflow-hidden bg-white py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto w-full max-w-6xl">
           
     <div class="mb-14 text-center lg:mb-20">
       <p class="section-kicker reveal" data-reveal>The Collaboration</p>
@@ -778,8 +779,8 @@
 
 
   <!-- Accountability: Group Momentum -->
-  <section id="accountability" class="relative bg-neutral-50/50 py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-    <div class="mx-auto w-full max-w-6xl text-center">
+  <section id="accountability" class="relative bg-white py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto w-full max-w-6xl text-center">
     
     <p class="section-kicker reveal" data-reveal>Group energy</p>
       <h2 class="heading-display mx-auto reveal max-w-2xl text-[clamp(1.85rem,4vw,3rem)]" data-reveal>
@@ -1001,8 +1002,8 @@
   </section>
 
 
-    <section id="bento" class="relative border-y border-neutral-100 bg-neutral-50/50 py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto w-full max-w-6xl">
+  <section id="bento" class="relative bg-neutral-50/50 py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto w-full max-w-6xl">
         <p class="section-kicker text-center reveal" data-reveal>The Fine Print</p>
         <h2 class="heading-display mx-auto mb-16 max-w-2xl text-center reveal text-[clamp(1.65rem,3.5vw,2.35rem)]" data-reveal>
           Everything else, tucked quietly away.
@@ -1055,7 +1056,145 @@
       </div>
     </section>
 
-  <!-- Finale -->
+    
+<!-- Pricing / Subscription -->
+  <section id="pricing" class="relative overflow-hidden bg-neutral-50/50 py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto w-full max-w-6xl">
+
+    <!-- Header -->
+    <div class="mb-16 text-center">
+      <p class="section-kicker reveal" data-reveal>Pricing</p>
+      <h2 class="heading-display mx-auto mt-2 max-w-3xl reveal text-[clamp(2rem,5vw,3.5rem)] leading-[1.05]" data-reveal>
+        Pick your plan.<br>Start the journey.
+      </h2>
+      <p class="mx-auto mt-6 max-w-xl text-base leading-relaxed text-neutral-500 reveal" data-reveal>
+        Whether you're a solo planner or a full barkada, there's a Lakbay plan that fits your vibe.
+      </p>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="mx-auto grid max-w-5xl gap-6 grid-cols-1 sm:grid-cols-3">
+
+      <!-- Freemium -->
+      <div class="reveal flex flex-col rounded-[2rem] border border-neutral-200/60 bg-neutral-50/50 p-8 shadow-sm transition-all hover:shadow-md" data-reveal>
+        <div class="mb-6">
+          <span class="inline-block rounded-full bg-neutral-100 px-4 py-1 text-[11px] font-bold uppercase tracking-widest text-neutral-500">Freemium</span>
+        </div>
+        <div class="mb-6">
+          <span class="text-[clamp(2.5rem,6vw,3.5rem)] font-extrabold tracking-tight text-neutral-900">₱0</span>
+        </div>
+        <ul class="space-y-3 flex-1">
+          <li class="flex items-start gap-2 text-[13px] text-neutral-600">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            2 trips/month AI Itinerary generation
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-neutral-600">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            1 option for Itinerary options per trip
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-neutral-600">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Basic budget computation
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-neutral-600">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Up to 3 pax for group size
+          </li>
+        </ul>
+        <a href="#finale" class="mt-8 inline-flex items-center justify-center rounded-full border-2 border-neutral-300 px-6 py-3 text-[13px] font-semibold text-neutral-700 transition-all hover:border-teal-500 hover:text-teal-600">
+          Get started free
+        </a>
+      </div>
+
+      <!-- Plus — Featured -->
+      <div class="reveal reveal-delay-1 flex flex-col rounded-[2rem] border-2 p-8 shadow-2xl transition-all hover:shadow-xl relative overflow-hidden" style="border-color: #2f7a7f; background: linear-gradient(135deg, #2f7a7f 0%, #1e5f62 100%);" data-reveal>
+        <div class="absolute -right-8 -top-8 h-32 w-32 rounded-full opacity-10 bg-white"></div>
+        <div class="mb-6 flex items-center justify-between">
+          <span class="inline-block rounded-full bg-white/20 px-4 py-1 text-[11px] font-bold uppercase tracking-widest text-white">Plus</span>
+          <span class="inline-block rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white" style="background-color: #d66f29;">Most Popular</span>
+        </div>
+        <div class="mb-2">
+          <span class="text-[clamp(2.5rem,6vw,3.5rem)] font-extrabold tracking-tight text-white">₱99</span>
+          <span class="text-sm font-medium text-white/60">/month</span>
+        </div>
+        <ul class="space-y-3 flex-1 mt-4">
+          <li class="flex items-start gap-2 text-[13px] text-white/90">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            10 trips/monthly for AI Itinerary generation
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/90">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            3 Itinerary options per trip
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/90">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Full budget computation & validation
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/90">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Up to 10 pax for group size
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/90">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Expense splitting & group planning
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/90">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Save up to 10 itineraries
+          </li>
+        </ul>
+        <a href="#finale" class="mt-8 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-[13px] font-bold transition-all hover:bg-white/90" style="color: #2f7a7f;">
+          Get Plus
+        </a>
+      </div>
+
+      <!-- Pro -->
+      <div class="reveal reveal-delay-2 flex flex-col rounded-[2rem] border border-neutral-200/60 bg-neutral-900 p-8 shadow-sm transition-all hover:shadow-md" data-reveal>
+        <div class="mb-6">
+          <span class="inline-block rounded-full px-4 py-1 text-[11px] font-bold uppercase tracking-widest text-white" style="background-color: #d66f29;">Pro</span>
+        </div>
+        <div class="mb-2">
+          <span class="text-[clamp(2.5rem,6vw,3.5rem)] font-extrabold tracking-tight text-white">₱199</span>
+          <span class="text-sm font-medium text-white/40">/month</span>
+        </div>
+        <ul class="space-y-3 flex-1 mt-4">
+          <li class="flex items-start gap-2 text-[13px] text-white/70">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Unlimited AI Itinerary generation
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/70">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            3 Itinerary options per trip
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/70">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Full budget computation & validation
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/70">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Unlimited Group Size
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/70">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Unlimited saved itinerary history
+          </li>
+          <li class="flex items-start gap-2 text-[13px] text-white/70">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Travel report
+          </li>
+        </ul>
+        <a href="#finale" class="mt-8 inline-flex items-center justify-center rounded-full px-6 py-3 text-[13px] font-bold text-white transition-all hover:opacity-90" style="background-color: #d66f29;">
+          Get Pro
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Finale -->
   <section id="finale"
     class="section-bleed relative flex min-h-[10vh] flex-col items-center justify-center bg-transparent py-24 px-6 text-neutral-900">
     <div

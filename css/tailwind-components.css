@@ -4,7 +4,6 @@
   .section-bleed {
     @apply px-6 py-24 lg:px-10 lg:py-32;
   }
-
   .section-kicker {
     @apply mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400;
   }
