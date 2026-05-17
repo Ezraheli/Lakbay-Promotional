@@ -41,8 +41,7 @@
     const memoryTop = memory ? memory.getBoundingClientRect().top : Infinity;
     const finaleTop = finale ? finale.getBoundingClientRect().top : Infinity;
     
-    const onDark = (memoryTop < 120 && finaleTop > -100) || finaleTop < 200;
-    const pastHero = heroBottom < 80;
+    const onDark = finaleTop < 200;    const pastHero = heroBottom < 80;
 
     const logo = nav.querySelector(".nav-logo");
     const links = nav.querySelectorAll(".nav-links a");
@@ -67,13 +66,12 @@
       if (logo) logo.className = "nav-logo text-[17px] font-semibold tracking-tight text-white hover:text-teal-400 transition-colors";
       links.forEach(l => l.className = "transition-colors hover:text-teal-400 text-white/80");
       burgerLines.forEach(l => l.className = "block h-[2px] w-full rounded-full bg-white transition-all duration-300");
-    } else if (pastHero) {
-      // Light sections
-      nav.classList.add("bg-white/90", "backdrop-blur-md", "border-b", "border-neutral-200", "shadow-sm");
-      if (logo) logo.className = "nav-logo text-[17px] font-semibold tracking-tight text-neutral-900 hover:text-teal-600 transition-colors";
-      links.forEach(l => l.className = "transition-colors hover:text-teal-600 text-neutral-600");
-      burgerLines.forEach(l => l.className = "block h-[2px] w-full rounded-full bg-neutral-900 transition-all duration-300");
-    } else {
+      } else if (pastHero) {
+        // Light sections
+        nav.classList.add("bg-white/95", "backdrop-blur-md", "border-b", "border-neutral-200", "shadow-sm");
+        if (logo) logo.className = "nav-logo text-[17px] font-semibold tracking-tight text-neutral-900 hover:text-teal-600 transition-colors";
+        links.forEach(l => l.style.color = "#2f7a7f");
+        burgerLines.forEach(l => l.className = "block h-[2px] w-full rounded-full bg-neutral-900 transition-all duration-300");    } else {
       // Hero section
       nav.classList.add("bg-transparent", "pt-2"); 
       if (logo) logo.className = "nav-logo text-[17px] font-semibold tracking-tight text-white hover:text-teal-400 transition-colors";
