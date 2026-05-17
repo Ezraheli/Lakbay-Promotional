@@ -893,10 +893,13 @@
     <section id="memory" class="section-bleed relative overflow-hidden bg-black py-24 lg:py-32">    <!-- Immersive Background -->
     
       <div class="absolute inset-0 z-0">
-      <div
-        class="absolute inset-0 bg-[url('media/bg3.svg')] bg-cover bg-center opacity-100"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60"></div>
-  </div>
+  <!-- Mobile BG -->
+  <div class="absolute inset-0 bg-[url('media/mobile-bg3.svg')] bg-cover bg-center opacity-100 block sm:hidden"></div>
+  <!-- Desktop BG -->
+  <div class="absolute inset-0 bg-[url('media/bg3.svg')] bg-cover bg-center opacity-100 hidden sm:block"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60"></div>
+</div>
+
 
     <div class="relative z-10 mx-auto max-w-7xl px-6">
       <div class="grid items-center gap-16 lg:grid-cols-2">
