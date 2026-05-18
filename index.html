@@ -35,8 +35,7 @@
     </nav>      
     <div class="flex items-center gap-4">           
 
-        <a href="#finale" class="rounded-full bg-teal-500 px-5 py-2 text-[13px] font-bold text-[white] shadow-sm transition-all hover:scale-105 hover:bg-teal-600">Visit our booth Now!</a>
-        
+  <button onclick="openBoothModal()" class="rounded-full bg-teal-500 px-5 py-2 text-[13px] font-bold text-[white] shadow-sm transition-all hover:scale-105 hover:bg-teal-600">Visit our booth Now!</button>        
         <button id="mobile-menu-btn" class="relative flex w-6 flex-col justify-center gap-[5px] py-2 lg:hidden" aria-label="Toggle menu">
           <span class="block h-[2px] w-full rounded-full transition-all duration-300"></span>
           <span class="block h-[2px] w-full rounded-full transition-all duration-300"></span>
@@ -1206,13 +1205,13 @@
       <p class="mt-4 text-sm text-neutral-500 reveal" data-reveal>Start a canvas in seconds. No noise, no clutter.</p>
       
       <div class="mt-10 flex flex-col gap-3 reveal-scale sm:flex-row sm:justify-center" data-reveal-scale>
-        <label for="destination-input" class="sr-only">Destination</label>
-        <input id="destination-input" type="text" placeholder="City, country, or vibe" 
-          class="w-full sm:max-w-xs rounded-full border border-neutral-200 bg-white px-6 py-3.5 text-sm text-neutral-900 placeholder:text-neutral-400 shadow-sm transition-all duration-300 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500" />
-        
-        <button type="button" 
-          class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-teal-500 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-500/20 transition-all hover:scale-105 hover:bg-teal-600">Visit Our Booth Now!</button>
-      </div>
+      <label for="destination-input" class="sr-only">Destination</label>
+      <input id="destination-input" type="text" placeholder="City, country, or vibe" 
+        class="w-full sm:max-w-xs rounded-full border border-neutral-200 bg-white px-6 py-3.5 text-sm text-neutral-900 placeholder:text-neutral-400 shadow-sm transition-all duration-300 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500" />
+      
+      <button type="button" onclick="openBoothModal()"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-teal-500 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-500/20 transition-all hover:scale-105 hover:bg-teal-600">Visit Our Booth Now!</button>
+    </div>
       
       <p class="mt-14 text-[11px] tracking-tight text-neutral-400 reveal" data-reveal>Lakbay · Journey, planned and
         remembered.</p>
@@ -1279,6 +1278,116 @@
   </button>
 
   <script src="js/main.js" defer></script>
+
+  <!-- Lakbay+ Booth  -->
+  <div id="booth-modal" class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="absolute inset-0 bg-neutral-950/70 backdrop-blur-sm" onclick="closeBoothModal()"></div>
+  
+  <div class="relative z-10 w-[90%] max-w-3xl transform scale-95 opacity-0 transition-all duration-300 rounded-[2rem] bg-white shadow-2xl p-6 sm:p-8" id="booth-modal-content">
+    
+    <div class="flex justify-between items-center mb-6 border-b border-neutral-100 pb-4">
+      <div>
+        <h3 class="text-2xl font-bold tracking-tight text-neutral-900">Find Lakbay+</h3>
+        <p class="text-sm text-neutral-500 mt-1">DNSC Gymnasium • Booth A6</p>
+      </div>
+      <button onclick="closeBoothModal()" class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-100 text-neutral-600 transition-colors hover:bg-neutral-200 hover:text-neutral-900">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="relative w-full aspect-[4/3] sm:aspect-[16/9] bg-neutral-50 rounded-xl overflow-hidden border border-neutral-200">
+      
+    <svg viewBox="0 0 800 650" class="w-full h-full drop-shadow-sm" preserveAspectRatio="xMidYMid meet">
+      <rect width="100%" height="100%" fill="#fafafa" />
+      
+      <rect x="100" y="40" width="600" height="80" fill="#e5e5e5" stroke="#d4d4d4" stroke-width="2" rx="4" />
+      <text x="400" y="85" font-family="Inter, sans-serif" font-size="20" font-weight="bold" fill="#737373" text-anchor="middle" letter-spacing="4">STAGE</text>
+
+      <g stroke="#d4d4d4" stroke-width="1.5" fill="#f5f5f5">
+        <rect x="100" y="150" width="120" height="35" /> <text x="160" y="172" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A1</text>
+        <rect x="100" y="190" width="120" height="35" /> <text x="160" y="212" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A2</text>
+        <rect x="100" y="230" width="120" height="35" /> <text x="160" y="252" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A3</text>
+        <rect x="100" y="270" width="120" height="35" /> <text x="160" y="292" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A4</text>
+        <rect x="100" y="310" width="120" height="35" /> <text x="160" y="332" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A5</text>
+        
+        <rect x="100" y="390" width="120" height="35" /> <text x="160" y="412" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A7</text>
+        <rect x="100" y="430" width="120" height="35" /> <text x="160" y="452" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A8</text>
+        <rect x="100" y="470" width="120" height="35" /> <text x="160" y="492" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A9</text>
+        <rect x="100" y="510" width="120" height="35" /> <text x="160" y="532" font-family="Inter" font-size="12" fill="#a3a3a3" text-anchor="middle">A10</text>
+
+        <rect x="250" y="150" width="120" height="395" /> <text x="310" y="347" font-family="Inter" font-size="14" fill="#d4d4d4" text-anchor="middle">Col B</text>
+        <rect x="400" y="150" width="120" height="395" /> <text x="460" y="347" font-family="Inter" font-size="14" fill="#d4d4d4" text-anchor="middle">Col C</text>
+        <rect x="550" y="150" width="120" height="395" /> <text x="610" y="347" font-family="Inter" font-size="14" fill="#d4d4d4" text-anchor="middle">Col D</text>
+      </g>
+
+      <rect x="96" y="346" width="128" height="43" fill="#2f7a7f" opacity="0.2" rx="6" />
+      <rect x="100" y="350" width="120" height="35" fill="#2f7a7f" stroke="#1e5f62" stroke-width="2" rx="4" />
+      <text x="160" y="372" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">A6 - Lakbay+</text>
+
+      <path d="M 300 600 L 500 600" stroke="#a3a3a3" stroke-width="4" stroke-linecap="round" />
+      <text x="400" y="585" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#737373" text-anchor="middle" letter-spacing="1">MAIN ENTRANCE</text>
+
+      <path d="M 400 570 L 400 560 L 230 560 L 230 367.5" 
+            fill="none" 
+            stroke="#d66f29" 
+            stroke-width="5" 
+            stroke-dasharray="10 10" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+            class="animate-[dash_2s_linear_infinite]" />
+            
+      <circle cx="230" cy="367.5" r="8" fill="#d66f29" stroke="#ffffff" stroke-width="2" />
+      <circle cx="230" cy="367.5" r="16" fill="#d66f29" opacity="0.3" class="animate-ping" />
+    </svg>
+        </div>
+
+    <div class="mt-6 flex justify-end">
+      <button onclick="closeBoothModal()" class="rounded-full bg-teal-500 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-teal-600">Got it!</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -20;
+    }
+  }
+</style>
+
+
+<script>
+  function openBoothModal() {
+    const modal = document.getElementById('booth-modal');
+    const content = document.getElementById('booth-modal-content');
+    
+    // Show wrapper
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100', 'pointer-events-auto');
+    
+    // Animate content in
+    setTimeout(() => {
+      content.classList.remove('scale-95', 'opacity-0');
+      content.classList.add('scale-100', 'opacity-100');
+    }, 10);
+  }
+
+  function closeBoothModal() {
+    const modal = document.getElementById('booth-modal');
+    const content = document.getElementById('booth-modal-content');
+    
+    // Animate content out
+    content.classList.remove('scale-100', 'opacity-100');
+    content.classList.add('scale-95', 'opacity-0');
+    
+    // Hide wrapper
+    setTimeout(() => {
+      modal.classList.remove('opacity-100', 'pointer-events-auto');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }, 300);
+  }
+</script>
+
 </body>
 
 </html>
